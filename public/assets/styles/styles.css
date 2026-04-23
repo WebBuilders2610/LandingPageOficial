@@ -2,18 +2,20 @@
 SIRAN — ESTILOS GLOBALES
 ============================================ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --blue: #4A7FF0;
-    --blue-dark: #0A1931;
-    --blue-light: #CDEBFF;
-    --bg-gray: #F2F2F2;
-    --card-blue: #D9E6F7;
+    --blue: #4a7ff0;
+    --blue-dark: #0a1931;
+    --blue-light: #cdebff;
+    --bg-gray: #f2f2f2;
+    --card-blue: #d9e6f7;
     --pro-green: #00a67e;
     --pro-bg: #cfe9e3;
     --white: #ffffff;
@@ -46,7 +48,7 @@ NAVBAR
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .logo {
@@ -88,7 +90,9 @@ NAVBAR
     font-size: 1rem;
     font-weight: 600;
     font-family: inherit;
-    transition: background-color var(--transition), transform var(--transition);
+    transition:
+        background-color var(--transition),
+        transform var(--transition);
     white-space: nowrap;
 }
 
@@ -151,7 +155,9 @@ HERO
     font-size: 1.1rem;
     font-weight: 600;
     font-family: inherit;
-    transition: background-color var(--transition), transform var(--transition);
+    transition:
+        background-color var(--transition),
+        transform var(--transition);
 }
 
 .hero-btn:hover {
@@ -214,4 +220,57 @@ BENEFICIOS
     font-size: 1.05rem;
     font-weight: 700;
     color: var(--blue-dark);
+}
+/* ============================================
+   TESTIMONIOS
+   ============================================ */
+
+.testimonials {
+    padding: 70px 60px;
+    background-color: var(--blue-light);
+}
+
+.testimonials-title {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.testimonials-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 500px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.testimonial img {
+    width: 220px;
+    height: 220px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.testimonial-text h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+}
+
+.testimonial-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
 }

@@ -1,62 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siran</title>
-    
-    <link rel="stylesheet" href="public/assets/styles/styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <img src="public/assets/img/Logo.png" class="logo" alt="Siran Logo">
-        <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
-        <div class="nav-container" id="nav-container">
-            <nav class="nav_links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#planes">Planes</a></li>
-                </ul>
-            </nav>
-            <button class="btn">Empezar</button>
-        </div>
-    </header>
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Cuida a tu bebé incluso cuando no puedes verlo</h1>
-            <p>
-                SIRAN monitorea la salud de tu bebé en tiempo
-                real y te alerta ante cualquier cambio importante,
-                ayudándote a actuar rápido y con tranquilidad.
-            </p>
-            <button class="hero-btn">Prueba Demo</button>
-        </div>
-        <div class="hero-img">
-            <img src="public/assets/img/FotoHero.png" alt="Doctora con bebé">
-        </div>
-    </section>
-    <!-- Beneficios -->
-    <section class="benefits" id="beneficios">
-        <h2 class="benefits-title">Beneficios Clave</h2>
-        <div class="benefit-cards">
-            <div class="benefit-card">
-                <img src="public/assets/img/card2.png" alt="Monitoreo clínico">
-                <h3>Precisión en el Monitoreo Clínico</h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Siran</title>
+
+        <link
+            rel="stylesheet"
+            href="public/assets/styles/styles.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="navbar">
+            <img
+                src="public/assets/img/Logo.png"
+                class="logo"
+                alt="Siran Logo" />
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Abrir menú">
+                ☰
+            </button>
+            <div
+                class="nav-container"
+                id="nav-container">
+                <nav class="nav_links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Empezar</button>
             </div>
-            <div class="benefit-card">
-                <img src="public/assets/img/card3.png" alt="Interfaz profesional">
-                <h3>Interfaz Profesional y Clara</h3>
+        </header>
+        <!-- Hero -->
+        <section
+            class="hero"
+            id="home">
+            <div class="hero-text">
+                <h1>Cuida a tu bebé incluso cuando no puedes verlo</h1>
+                <p>
+                    SIRAN monitorea la salud de tu bebé en tiempo real y te alerta ante cualquier cambio importante,
+                    ayudándote a actuar rápido y con tranquilidad.
+                </p>
+                <button class="hero-btn">Prueba Demo</button>
             </div>
-            <div class="benefit-card">
-                <img src="public/assets/img/card1.png" alt="Reportes de salud">
-                <h3>Reportes de estado de Salud</h3>
+            <div class="hero-img">
+                <img
+                    src="public/assets/img/FotoHero.png"
+                    alt="Doctora con bebé" />
             </div>
-        </div>
-    </section>
-    <link rel="javascript" href="public/assets/script/main.js">
-</body>
+        </section>
+        <!-- Beneficios -->
+        <section
+            class="benefits"
+            id="beneficios">
+            <h2 class="benefits-title">Beneficios Clave</h2>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card2.png"
+                        alt="Monitoreo clínico" />
+                    <h3>Precisión en el Monitoreo Clínico</h3>
+                </div>
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card3.png"
+                        alt="Interfaz profesional" />
+                    <h3>Interfaz Profesional y Clara</h3>
+                </div>
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card1.png"
+                        alt="Reportes de salud" />
+                    <h3>Reportes de estado de Salud</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section
+            class="testimonials"
+            id="testimonios">
+            <h2 class="testimonials-title">Testimonios</h2>
+            <div class="testimonials-row">
+                <div class="testimonial">
+                    <img
+                        src="/assets/testimonio1.png"
+                        alt="Carlos y Mateo" />
+                    <div class="testimonial-text">
+                        <h3>Carlos y su hijo Mateo</h3>
+                        <p>Gracias a la app pude detectar a tiempo una alerta en mi bebé. Me dio mucha tranquilidad.</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img
+                        src="/assets/testimonio2.png"
+                        alt="Laura y Sofía" />
+                    <div class="testimonial-text">
+                        <h3>Laura y su hija Sofía</h3>
+                        <p>Servicio increíble, supervisión prenatal excelente, confianza total.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <link
+            rel="javascript"
+            href="public/assets/script/main.js" />
+    </body>
 </html>
