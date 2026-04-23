@@ -608,3 +608,235 @@ BENEFICIOS
     font-size: 0.8rem;
     color: #999;
 }
+
+/* ============================================
+   RESPONSIVE — TABLET (max 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 40px;
+        gap: 30px;
+    }
+
+    .hero-img img {
+        max-width: 420px;
+    }
+
+    .pricing-card {
+        width: 260px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (max 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 20px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        gap: 20px;
+        z-index: 99;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav_links ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav_links a {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 24px 50px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+    }
+
+    /* Beneficios */
+    .benefits {
+        padding: 50px 24px;
+    }
+
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .benefit-card {
+        width: 100%;
+        max-width: 360px;
+        padding: 36px 28px;
+    }
+
+    /* Testimonios */
+    .testimonials {
+        padding: 50px 24px;
+    }
+
+    .testimonials-row {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .testimonial img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Pricing */
+    .pricing {
+        padding: 50px 24px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .pricing-card.pro {
+        transform: scale(1);
+        order: -1;
+    }
+
+    .pricing-card.pro:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Screenshots */
+    .screenshots {
+        padding: 50px 24px;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .screenshot.side,
+    .screenshot.center {
+        width: 85%;
+        height: auto;
+        transform: none !important;
+        filter: brightness(1) !important;
+        margin: 0 !important;
+        z-index: 1;
+    }
+
+    .gallery-container .screenshot:hover {
+        transform: translateY(-6px) scale(1.02) !important;
+    }
+
+    /* Equipo */
+    .team {
+        padding: 50px 24px;
+    }
+
+    .team-container {
+        gap: 30px;
+    }
+
+    .member img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 60px 24px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 24px 12px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (max 400px)
+   ============================================ */
+
+@media (max-width: 400px) {
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 28px 20px;
+    }
+
+    .pricing-card {
+        padding: 28px 20px;
+    }
+
+    .member img {
+        width: 110px;
+        height: 110px;
+    }
+}
