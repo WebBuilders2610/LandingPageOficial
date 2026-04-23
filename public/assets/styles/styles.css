@@ -1,0 +1,842 @@
+/* ============================================
+SIRAN — ESTILOS GLOBALES
+============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #4a7ff0;
+    --blue-dark: #0a1931;
+    --blue-light: #cdebff;
+    --bg-gray: #f2f2f2;
+    --card-blue: #d9e6f7;
+    --pro-green: #00a67e;
+    --pro-bg: #cfe9e3;
+    --white: #ffffff;
+    --text-muted: #555;
+    --radius: 12px;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--blue-dark);
+    overflow-x: hidden;
+}
+
+/* ============================================
+NAVBAR
+============================================ */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: var(--blue-dark);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color var(--transition);
+}
+
+.nav_links a:hover {
+    color: var(--blue);
+}
+
+.btn {
+    padding: 10px 22px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    transition:
+        background-color var(--transition),
+        transform var(--transition);
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #3568d4;
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--blue-dark);
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+/* ============================================
+HERO
+============================================ */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 80px 60px;
+    background-color: var(--bg-gray);
+}
+
+.hero-text {
+    max-width: 560px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--blue-dark);
+}
+
+.hero-text p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    color: #333;
+}
+
+.hero-btn {
+    padding: 12px 28px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+    transition:
+        background-color var(--transition),
+        transform var(--transition);
+}
+
+.hero-btn:hover {
+    background-color: #3568d4;
+    transform: translateY(-2px);
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+
+/* ============================================
+BENEFICIOS
+============================================ */
+
+.benefits {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.benefits-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background: var(--card-blue);
+    padding: 50px 40px;
+    width: 280px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    transition: transform var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.benefit-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+/* ============================================
+   TESTIMONIOS
+   ============================================ */
+
+.testimonials {
+    padding: 70px 60px;
+    background-color: var(--blue-light);
+}
+
+.testimonials-title {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.testimonials-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 500px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.testimonial img {
+    width: 220px;
+    height: 220px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.testimonial-text h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+}
+
+.testimonial-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* ============================================
+   PRICING
+   ============================================ */
+
+.pricing {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.pricing-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 60px;
+    color: var(--blue-dark);
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: var(--card-blue);
+    padding: 36px 32px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    border: 3px solid var(--blue);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.pro {
+    transform: scale(1.08);
+    background: var(--pro-bg);
+    border-color: var(--pro-green);
+    z-index: 2;
+}
+
+.pricing-card.pro:hover {
+    transform: scale(1.12) translateY(-10px);
+}
+
+.pricing-card h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.plan-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.plan-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    margin-bottom: 4px;
+}
+
+.plan-period {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.pricing-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.pricing-card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 0.95rem;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.pricing-card ul li::before {
+    content: '✓ ';
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.pricing-card.pro ul li::before {
+    color: var(--pro-green);
+}
+
+.pricing-card button {
+    margin-top: 8px;
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    width: 100%;
+    transition: background-color var(--transition);
+}
+
+.pricing-card button:hover {
+    background-color: #3568d4;
+}
+
+.pricing-card.pro button {
+    background-color: var(--pro-green);
+}
+
+.pricing-card.pro button:hover {
+    background-color: #008c6a;
+}
+
+/* ============================================
+   CAPTURAS DE PANTALLA
+   ============================================ */
+
+.screenshots {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.screenshots-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+.screenshot {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: transform var(--transition), filter var(--transition), z-index 0s;
+}
+
+.screenshot.side {
+    width: 340px;
+    height: 500px;
+    filter: brightness(0.7);
+    transform: scale(0.88);
+    z-index: 1;
+}
+
+.screenshot.side:first-child {
+    margin-right: -80px;
+}
+
+.screenshot.side:last-child {
+    margin-left: -80px;
+}
+
+.screenshot.center {
+    width: 420px;
+    height: 600px;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.gallery-container .screenshot:hover {
+    transform: translateY(-10px) scale(1.08);
+    z-index: 10;
+    filter: brightness(1);
+}
+
+/* ============================================
+   EQUIPO
+   ============================================ */
+
+.team {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.team-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    transition: transform var(--transition);
+    border: 4px solid var(--card-blue);
+}
+
+.member img:hover {
+    transform: scale(1.1);
+}
+
+.member p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+}
+
+/* ============================================
+   CTA FINAL
+   ============================================ */
+
+.cta {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+    text-align: center;
+    padding: 90px 60px;
+}
+
+.cta-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin-bottom: 16px;
+    color: #1150B3;
+}
+
+.cta-subtitle {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    margin-bottom: 36px;
+    color: #333;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    padding: 14px 36px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    transition: transform var(--transition), background-color var(--transition);
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background-color: #3568d4;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: var(--white);
+    padding: 20px 40px 12px;
+    border-top: 1px solid #eee;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-social img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform var(--transition);
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (max 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 40px;
+        gap: 30px;
+    }
+
+    .hero-img img {
+        max-width: 420px;
+    }
+
+    .pricing-card {
+        width: 260px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (max 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 20px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        gap: 20px;
+        z-index: 99;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav_links ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav_links a {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 24px 50px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+    }
+
+    /* Beneficios */
+    .benefits {
+        padding: 50px 24px;
+    }
+
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .benefit-card {
+        width: 100%;
+        max-width: 360px;
+        padding: 36px 28px;
+    }
+
+    /* Testimonios */
+    .testimonials {
+        padding: 50px 24px;
+    }
+
+    .testimonials-row {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .testimonial img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Pricing */
+    .pricing {
+        padding: 50px 24px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .pricing-card.pro {
+        transform: scale(1);
+        order: -1;
+    }
+
+    .pricing-card.pro:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Screenshots */
+    .screenshots {
+        padding: 50px 24px;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .screenshot.side,
+    .screenshot.center {
+        width: 85%;
+        height: auto;
+        transform: none !important;
+        filter: brightness(1) !important;
+        margin: 0 !important;
+        z-index: 1;
+    }
+
+    .gallery-container .screenshot:hover {
+        transform: translateY(-6px) scale(1.02) !important;
+    }
+
+    /* Equipo */
+    .team {
+        padding: 50px 24px;
+    }
+
+    .team-container {
+        gap: 30px;
+    }
+
+    .member img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 60px 24px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 24px 12px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (max 400px)
+   ============================================ */
+
+@media (max-width: 400px) {
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 28px 20px;
+    }
+
+    .pricing-card {
+        padding: 28px 20px;
+    }
+
+    .member img {
+        width: 110px;
+        height: 110px;
+    }
+}

@@ -1,12 +1,225 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siran</title>
-    <link rel="stylesheet" href="public/assets/styles/styles.css">
-</head>
-<body>
-    <link rel="javascript" href="public/assets/script/main.js">
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Siran</title>
+
+        <link
+            rel="stylesheet"
+            href="public/assets/styles/styles.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="navbar">
+            <img
+                src="public/assets/img/Logo.png"
+                class="logo"
+                alt="Siran Logo" />
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Abrir menú">
+                ☰
+            </button>
+            <div
+                class="nav-container"
+                id="nav-container">
+                <nav class="nav_links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Empezar</button>
+            </div>
+        </header>
+        <!-- Hero -->
+        <section
+            class="hero"
+            id="home">
+            <div class="hero-text">
+                <h1>Cuida a tu bebé incluso cuando no puedes verlo</h1>
+                <p>
+                    SIRAN monitorea la salud de tu bebé en tiempo real y te alerta ante cualquier cambio importante,
+                    ayudándote a actuar rápido y con tranquilidad.
+                </p>
+                <button class="hero-btn">Prueba Demo</button>
+            </div>
+            <div class="hero-img">
+                <img
+                    src="public/assets/img/FotoHero.png"
+                    alt="Doctora con bebé" />
+            </div>
+        </section>
+        <!-- Beneficios -->
+        <section
+            class="benefits"
+            id="beneficios">
+            <h2 class="benefits-title">Beneficios Clave</h2>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card2.png"
+                        alt="Monitoreo clínico" />
+                    <h3>Precisión en el Monitoreo Clínico</h3>
+                </div>
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card3.png"
+                        alt="Interfaz profesional" />
+                    <h3>Interfaz Profesional y Clara</h3>
+                </div>
+                <div class="benefit-card">
+                    <img
+                        src="public/assets/img/card1.png"
+                        alt="Reportes de salud" />
+                    <h3>Reportes de estado de Salud</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonios -->
+        <section
+            class="testimonials"
+            id="testimonios">
+            <h2 class="testimonials-title">Testimonios</h2>
+            <div class="testimonials-row">
+                <div class="testimonial">
+                    <img
+                        src="public/assets/img/testimonio1.png"
+                        alt="Carlos y Mateo" />
+                    <div class="testimonial-text">
+                        <h3>Carlos y su hijo Mateo</h3>
+                        <p>Gracias a la app pude detectar a tiempo una alerta en mi bebé. Me dio mucha tranquilidad.</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img
+                        src="public/assets/img/testimonio2.png"
+                        alt="Laura y Sofía" />
+                    <div class="testimonial-text">
+                        <h3>Laura y su hija Sofía</h3>
+                        <p>Servicio increíble, supervisión prenatal excelente, confianza total.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Planes y Precios -->
+        <section
+            class="pricing"
+            id="planes">
+            <h2 class="pricing-title">Precios y Planes</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card basic">
+                    <h3>Básico</h3>
+                    <p class="plan-subtitle">Cuidado Esencial</p>
+                    <div class="plan-price">S/29.90</div>
+                    <p class="plan-period">Precio Mensual</p>
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Sin anuncios</li>
+                        <li>Monitoreo básico del bebé</li>
+                        <li>Registro diario de actividad</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+
+                <div class="pricing-card pro">
+                    <h3>Pro</h3>
+                    <p class="plan-subtitle">Cuidado Inteligente</p>
+                    <div class="plan-price">S/60.00</div>
+                    <p class="plan-period">Precio Mensual</p>
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Todo lo del plan básico</li>
+                        <li>Monitoreo avanzado</li>
+                        <li>Alertas inteligentes</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+
+                <div class="pricing-card enterprise">
+                    <h3>Enterprise</h3>
+                    <p class="plan-subtitle">Cuidado Profesional</p>
+                    <div class="plan-price">S/99.90</div>
+                    <p class="plan-period">Precio Mensual</p>
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Todo lo del plan Pro</li>
+                        <li>Monitoreo múltiple</li>
+                        <li>Reportes profesionales</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Capturas de Pantalla -->
+        <section class="screenshots">
+            <h2 class="screenshots-title">Capturas de Pantalla</h2>
+            <div class="gallery-container">
+                <img src="public/assets/img/screen1.jpg" alt="Pantalla izquierda" class="screenshot side">
+                <img src="public/assets/img/screen2.jpg" alt="Pantalla central" class="screenshot center">
+                <img src="public/assets/img/screen3.jpg" alt="Pantalla derecha" class="screenshot side">
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section class="team">
+            <h2 class="team-title">Nuestro Equipo</h2>
+            <div class="team-container">
+                <div class="member">
+                    <img src="public/assets/img/p1.jpg" alt="Yazid Said Conde">
+                    <p>Yazid Said Conde</p>
+                </div>
+                <div class="member">
+                    <img src="public/assets/img/p2.jpg" alt="Angel Gabriel Crispin">
+                    <p>Angel Gabriel Crispin</p>
+                </div>
+                <div class="member">
+                    <img src="public/assets/img/p3.jpg" alt="Juan Diego Flores">
+                    <p>Juan Diego Flores</p>
+                </div>
+                <div class="member">
+                    <img src="public/assets/img/p4.jpg" alt="Alexander Gabriel Montoya">
+                    <p>Alexander Gabriel Montoya</p>
+                </div>
+                <div class="member">
+                    <img src="public/assets/img/p5.jpg" alt="Mauricio Jared Padilla">
+                    <p>Mauricio Jared Padilla</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Final -->
+        <section class="cta">
+        <h2 class="cta-title">Empieza a cuidar lo que más importa</h2>
+        <p class="cta-subtitle">
+            Únete hoy y brinda a tu bebé la seguridad que merece desde el primer día.
+        </p>
+        <button class="cta-btn">Comenzar ahora</button>
+        </section>
+        
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="public/assets/img/Logo.png" alt="Siran Logo">
+            </div>
+            <div class="footer-social">
+                <img src="public/assets/img/facebook.png" alt="Facebook">
+                <img src="public/assets/img/instagram.png" alt="Instagram">
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Siran. Todos los derechos reservados</p>
+    </footer>
+    
+        <script src="public/assets/script/main.js"></script>
+ 
+    </body>
 </html>
