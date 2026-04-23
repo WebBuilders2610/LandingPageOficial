@@ -517,3 +517,94 @@ BENEFICIOS
     font-weight: 600;
     color: var(--blue-dark);
 }
+
+/* ============================================
+   CTA FINAL
+   ============================================ */
+
+.cta {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+    text-align: center;
+    padding: 90px 60px;
+}
+
+.cta-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin-bottom: 16px;
+    color: #1150B3;
+}
+
+.cta-subtitle {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    margin-bottom: 36px;
+    color: #333;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    padding: 14px 36px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    transition: transform var(--transition), background-color var(--transition);
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background-color: #3568d4;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: var(--white);
+    padding: 20px 40px 12px;
+    border-top: 1px solid #eee;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-social img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform var(--transition);
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: #999;
+}
