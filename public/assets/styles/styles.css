@@ -409,3 +409,63 @@ BENEFICIOS
 .pricing-card.pro button:hover {
     background-color: #008c6a;
 }
+
+/* ============================================
+   CAPTURAS DE PANTALLA
+   ============================================ */
+
+.screenshots {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.screenshots-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: 50px;
+    color: var(--blue-dark);
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+.screenshot {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: transform var(--transition), filter var(--transition), z-index 0s;
+}
+
+.screenshot.side {
+    width: 340px;
+    height: 500px;
+    filter: brightness(0.7);
+    transform: scale(0.88);
+    z-index: 1;
+}
+
+.screenshot.side:first-child {
+    margin-right: -80px;
+}
+
+.screenshot.side:last-child {
+    margin-left: -80px;
+}
+
+.screenshot.center {
+    width: 420px;
+    height: 600px;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.gallery-container .screenshot:hover {
+    transform: translateY(-10px) scale(1.08);
+    z-index: 10;
+    filter: brightness(1);
+}
